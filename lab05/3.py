@@ -1,8 +1,8 @@
 import re
 
-pattern = re.compile(r'ab*')
+pattern = re.compile(r'[a-z]+_[a-z]+')
 
-text = 'abbbbbbb'
+text = 'asdkjd_nfwewe'
 
 matches = pattern.finditer(text)
 

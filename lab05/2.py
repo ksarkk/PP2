@@ -1,10 +1,12 @@
 import re
 
-text = "abbb"
+pattern = re.compile(r'ab{2,3}')
 
-x = re.search(r'b{2, 3}', text)
+text1 = 'abbbbb'
+text2 = 'abb'
+text3 = 'aabbb'
 
-y = re.search('a{3,5}', 'aaaa')
+matches = pattern.finditer(text1)
 
-print(x)
-print(y)
+for match in matches :
+    print(match)

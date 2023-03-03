@@ -1,8 +1,8 @@
 import re
 
-pattern = re.compile(r'ab*')
+pattern = re.compile(r'a.*b')
 
-text = 'abbbbbbb'
+text = 'akwjfhjeroiwjribasd'
 
 matches = pattern.finditer(text)
 

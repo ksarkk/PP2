@@ -1,8 +1,8 @@
 import re
 
-pattern = re.compile(r'ab*')
+pattern = re.compile(r'[A-Z][a-z]+')
 
-text = 'abbbbbbb'
+text = 'Asldkfl'
 
 matches = pattern.finditer(text)
 
