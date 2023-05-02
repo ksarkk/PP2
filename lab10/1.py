@@ -121,9 +121,3 @@ finally :
     if conn is not None:
         conn.close()
         print("[INFO] Connection was closed")
-
-# with open("lab10\sample.csv") as file :
-#     reader = csv.reader(file)
-
-#     for row in reader :
-#         print(row[0])
